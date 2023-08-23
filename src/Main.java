@@ -21,7 +21,6 @@ public class Main {
             };
             Thread thread = new Thread(logic);
             thread.start();
-            thread.join();
         }
 
         int maxValue = Collections.max(sizeToFreq.entrySet(), Map.Entry.comparingByValue()).getKey();
